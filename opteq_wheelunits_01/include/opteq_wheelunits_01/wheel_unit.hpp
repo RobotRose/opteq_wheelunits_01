@@ -34,14 +34,14 @@
 #define STEER_PPR	            (4096.0)                    // [#] absolute encoder ticks per rotation
 #define DRIVE_PPR            	(500.0*4.0*51.0)         	// [#] 500.0*4.0 = counts per rotation, 51.0 is gear ratio
 
-#define WHEELUNIT_MAX_ANGLE     (1024.0)                    // [pulses]
-#define WHEELUNIT_MIN_ANGLE     (-WHEELUNIT_MAX_ANGLE)      // [pulses]
+#define WHEELUNIT_MAX_ANGLE     (1024.0)                    // [ticks]
+#define WHEELUNIT_MIN_ANGLE     (-WHEELUNIT_MAX_ANGLE)      // [ticks]
 #define WHEELUNIT_MAX_VEL       (DRIVE_PPR*1.25)            // [pulses/s] Limited by encoder measure rate, higher speeds return zero velocity
 #define WHEELUNIT_MIN_VEL       (-WHEELUNIT_MAX_VEL)        // [pulses/s]
 #define STEER_VELOCITY_LIMIT    (STEER_PPR/5.0)             // [pulses/s]
 
 #define WHEELUNIT_START_MOVE_ANGLE_ERR_VAL 	((2.0*M_PI)/64.0)	// [rad] Start moving forwards again if the wheelunits are rotated to within this angle of the setpoint	
-#define WHEELUNIT_STOP_MOVE_ANGLE_ERR_VAL   ((2.0*M_PI)/24.0) 	// [rad] Stop moving forwards if the wheelunits are rotated out of this angle from the setpoint
+#define WHEELUNIT_STOP_MOVE_ANGLE_ERR_VAL   ((2.0*M_PI)/12.0) 	// [rad] Stop moving forwards if the wheelunits are rotated out of this angle from the setpoint
 #define WHEELUNIT_START_MOVE_ANGLE_ERR_VAL_LOW_LEVEL ((int)(WHEELUNIT_START_MOVE_ANGLE_ERR_VAL*(STEER_PPR/(2.0*M_PI))))		// [abs encoder ticks]
 #define WHEELUNIT_STOP_MOVE_ANGLE_ERR_VAL_LOW_LEVEL	 ((int)(WHEELUNIT_STOP_MOVE_ANGLE_ERR_VAL*(STEER_PPR/(2.0*M_PI))))		// [abs encoder ticks]
 #define WHEELUNIT_STOP_TURN_SPEED_ERR_VAL   0.10 						// [m/s]
