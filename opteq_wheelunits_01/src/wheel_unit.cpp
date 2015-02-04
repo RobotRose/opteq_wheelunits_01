@@ -76,9 +76,9 @@ WheelUnit::~WheelUnit()
 
 bool WheelUnit::setAngleRad(float radians)
 {
-	wrapToHalfPi(&radians);
+	rose_geometry::wrapToHalfPi(&radians);
 	int new_rotation = toLowLevelSteer(radians); 
-	if(limit(WHEELUNIT_MIN_ANGLE, WHEELUNIT_MAX_ANGLE, &new_rotation))
+	if(rose_conversions::limit(WHEELUNIT_MIN_ANGLE, WHEELUNIT_MAX_ANGLE, &new_rotation))
 	{
 		ROS_WARN_NAMED(ROS_NAME_WU, "Rotation limit reached, while trying to set to: %.4frad", radians);
 		return false;
@@ -98,7 +98,7 @@ bool WheelUnit::setAngleDeg(float degrees)
 bool WheelUnit::setVelocityRadPerSec(float rad_per_sec)
 {
 	int new_velocity = toLowLevelDrive(rad_per_sec);
-	if(limit(WHEELUNIT_MIN_VEL, WHEELUNIT_MAX_VEL, &new_velocity))
+	if(rose_conversions::limit(WHEELUNIT_MIN_VEL, WHEELUNIT_MAX_VEL, &new_velocity))
 	{
 		ROS_WARN_NAMED(ROS_NAME_WU, "Rad/s limit reached, while trying to set: %.4frad/s", rad_per_sec);
 		return false;

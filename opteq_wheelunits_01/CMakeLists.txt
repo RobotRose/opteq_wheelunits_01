@@ -4,6 +4,8 @@ project(opteq_wheelunits_01)
 find_package(catkin REQUIRED
 	COMPONENTS
 		rose_common
+		rose_conversions
+		rose_geometry
 	)
 
 set(CMAKE_CXX_FLAGS "-std=c++0x -fPIC -g")
@@ -15,6 +17,8 @@ catkin_package(
 		opteq_wheelunits_01 
 	CATKIN_DEPENDS
 		rose_common
+		rose_conversions
+		rose_geometry
 )
 
 include_directories(
