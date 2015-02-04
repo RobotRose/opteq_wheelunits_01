@@ -20,7 +20,7 @@
 #include <math.h>
 
 #include "ros/ros.h"
-#include "rose20_common/common.hpp"
+#include "rose_common/common.hpp"
 #include "rose20_common/ros_name.hpp"
 
 #define ROS_NAME_WU 			(ROS_NAME + "|WU")
