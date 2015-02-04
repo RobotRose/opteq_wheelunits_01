@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package>
+  <name>opteq_wheelunits_01</name>
+  <version>0.0.0</version>
+  <description>The opteq_wheelunits_01 package</description>
+
+   <author email="langen@robot-rose.nl">Mathijs de Langen</author>
+  <maintainer email="langen@robot-rose.nl">Mathijs de Langen</maintainer>
+
+  <license>BSD</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <export>
+  </export>
+</package>
