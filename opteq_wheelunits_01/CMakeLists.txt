@@ -2,9 +2,8 @@ cmake_minimum_required(VERSION 2.8.3)
 project(opteq_wheelunits_01)
 
 find_package(catkin REQUIRED
-# 	COMPONENTS
-# 		geometry_msgs
-# 		rose_geometry
+	COMPONENTS
+		rose_common
 	)
 
 set(CMAKE_CXX_FLAGS "-std=c++0x -fPIC -g")
@@ -14,8 +13,8 @@ catkin_package(
 		include
     LIBRARIES 
 		opteq_wheelunits_01 
-	# CATKIN_DEPENDS
-		# rose_geometry
+	CATKIN_DEPENDS
+		rose_common
 )
 
 include_directories(
