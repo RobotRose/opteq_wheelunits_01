@@ -43,7 +43,6 @@
 #define WHEELUNIT_STOP_TURN_SPEED_ERR_VAL   0.10 						// [m/s]
 
 using namespace std; 
-using namespace rose20_common;
 
 /**
  * The WheelUnit class contains the functions and variables for working with the rose 2.0 swifel wheel units.
