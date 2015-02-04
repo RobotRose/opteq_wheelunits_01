@@ -11,7 +11,7 @@
 * 
 ***********************************************************************************/
 
-#include "rose20_common/wheel_unit.hpp"
+#include "opteq_wheelunits_01/wheel_unit.hpp"
 
 //! @todo OH: Move into namespace
 
