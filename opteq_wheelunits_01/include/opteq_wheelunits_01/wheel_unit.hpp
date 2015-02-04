@@ -21,7 +21,10 @@
 #include <stdio.h>
 #include <math.h>
 
+#include "rose_conversions/conversions.hpp"
 #include "rose_common/common.hpp"
+#include "rose_geometry/geometry.hpp"
+
 #include "ros_name/ros_name.hpp"
 
 #define ROS_NAME_WU 			(ROS_NAME + "|WU")
