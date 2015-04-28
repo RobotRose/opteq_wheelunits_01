@@ -105,6 +105,11 @@ class WheelUnit
 	int    	getDriveMotorID() const;
 	int    	getSteerMotorID() const;
 
+	float 	getMinVel() const;
+	float 	getMaxVel() const;
+	float 	getMinAngle() const;
+	float 	getMaxAngle() const;
+
 	string 		name_;       //! @todo OH: Make private what can be private?
 	int 		id_;
 	int			set_velocity_;
