@@ -263,20 +263,20 @@ int WheelUnit::getSteerMotorID() const
 
 float WheelUnit::getMinVel() const
 {
-	return WHEELUNIT_MIN_VEL;
+	return toVelocityMetersPerSec((int)WHEELUNIT_MIN_VEL);
 }
 
 float WheelUnit::getMaxVel() const
 {
-	return WHEELUNIT_MAX_VEL;
+	return toVelocityMetersPerSec((int)WHEELUNIT_MAX_VEL);
 }
 
 float WheelUnit::getMinAngle() const
 {
-	return WHEELUNIT_MIN_ANGLE;
+	return toAngleRad((int)WHEELUNIT_MIN_ANGLE);
 }
 
 float WheelUnit::getMaxAngle() const
 {
-	return WHEELUNIT_MAX_ANGLE;
+	return toAngleRad((int)WHEELUNIT_MAX_ANGLE) ;
 }
